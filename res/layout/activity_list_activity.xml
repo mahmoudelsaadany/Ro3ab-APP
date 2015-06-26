@@ -1,0 +1,40 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@drawable/listview_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/autoCompleteTextView1"
+         >
+
+    </ListView>
+    
+    <Button
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/autoCompleteTextView1"
+        android:text="TOP" />
+
+    <Button
+        android:id="@+id/shuffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="shuffle" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/shuffle"
+        android:layout_alignBottom="@+id/shuffle"
+        android:layout_toLeftOf="@+id/shuffle"
+        android:ems="10" />
+
+</RelativeLayout>
